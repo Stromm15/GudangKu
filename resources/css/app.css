@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #ff842c;
+  --color-brand-dark: #d97026;
+  --color-sidebar: #555555;
+  --color-sidebar-dark: #343434;
+  --font-sans: "Poppins", sans-serif;
+
+  --animate-login-open: loginOpen 1.5s ease-in-out forwards;
+  --animate-login-close: loginClose 1.5s ease-in-out forwards;
+  --animate-regis-open: regisOpen 1.5s ease-in-out forwards;
+  --animate-regis-close: regisClose 1.5s ease-in-out forwards;
+
+  @keyframes loginOpen {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-400px); }
+    100% { transform: translateX(0) rotate(7deg); z-index: 1; }
+  }
+  @keyframes loginClose {
+    0% { transform: translateX(0) rotate(7deg); z-index: 1; }
+    100% { transform: translateX(0) rotate(0deg); z-index: 3; }
+  }
+  @keyframes regisOpen {
+    0% { transform: rotate(7deg); }
+    100% { transform: rotate(0deg); z-index: 2; }
+  }
+  @keyframes regisClose {
+    0% { transform: rotate(0deg); }
+    50% { transform: translateX(-400px); }
+    100% { transform: rotate(7deg); z-index: 1; }
+  }
+}
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--color-brand);
+    border-radius: 999px;
+  }
+
+  .dashboard-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  }
+}
