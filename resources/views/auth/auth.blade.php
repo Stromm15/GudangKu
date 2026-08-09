@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>GudangKu - Login</title>
+    <title>GudangKu</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,12 +161,8 @@
 
                     <div class="mb-8">
 
-                        <p class="text-[#ff842c] text-xs font-medium uppercase tracking-[.18em]">
-                            Welcome back
-                        </p>
-
                         <h2 class="text-3xl font-semibold text-[#292929] mt-2">
-                            Selamat datang 👋
+                            Selamat datang 
                         </h2>
 
                         <p class="text-sm text-gray-500 mt-2">
