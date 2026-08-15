@@ -29,7 +29,7 @@
         <div class="text-left">
             <p class="text-xs font-medium uppercase tracking-[.16em] text-brand">Inventory</p>
             <h1 class="text-2xl sm:text-3xl font-semibold mt-1">Data Barang</h1>
-            <p class="text-sm text-gray-500 mt-1">Kelola seluruh persediaan barang GudangKu.</p>
+            <p class="text-sm text-gray-500 mt-1">Kelola seluruh persediaan barang anda.</p>
         </div>
 
         <button onclick="openPopup()"
@@ -161,7 +161,7 @@
                                     <i class="bx bx-package text-3xl"></i>
                                 </div>
                                 <p class="text-sm font-medium text-gray-500">Belum ada data barang</p>
-                                <p class="text-xs mt-1">Tambahkan barang pertama kamu.</p>
+                                <p class="text-xs mt-1">Tambahkan barang pertama anda.</p>
                             </div>
                         </td>
                     </tr>

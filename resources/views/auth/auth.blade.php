@@ -50,6 +50,14 @@
     </script>
     @endif
 
+    @if($errors->any())
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            Swal.fire({ icon: 'error', title: 'Registrasi Gagal', text: @json($errors->first()) });
+        });
+    </script>
+    @endif
+
 
     {{-- ================= MAIN CARD ================= --}}
 
@@ -162,7 +170,7 @@
                     <div class="mb-8">
 
                         <h2 class="text-3xl font-semibold text-[#292929] mt-2">
-                            Selamat datang 
+                            Selamat datang
                         </h2>
 
                         <p class="text-sm text-gray-500 mt-2">
@@ -350,22 +358,7 @@
                         </p>
 
                     </div>
-
-
-                    @if($errors->any())
-
-                        <div class="bg-red-50 border border-red-100 text-red-600 rounded-xl p-3 mb-5 text-sm">
-
-                            @foreach($errors->all() as $error)
-
-                                <p>{{ $error }}</p>
-
-                            @endforeach
-
-                        </div>
-
-                    @endif
-
+                    
 
                     <form action="/register" method="POST">
 

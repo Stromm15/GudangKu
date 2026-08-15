@@ -30,8 +30,7 @@
         </div>
 
         <label for="check" class="cursor-pointer w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-            <i id="menu" class="bx bx-menu text-2xl"></i>
-            <i id="cancel" class="bx bx-x text-2xl hidden"></i>
+            <i class="bx bx-menu text-2xl"></i>
         </label>
     </header>
 

@@ -45,7 +45,7 @@
             </h1>
 
             <p class="text-sm text-gray-500 mt-1">
-                Pantau kondisi persediaan GudangKu dengan cepat.
+                Pantau kondisi persediaan anda dengan cepat.
             </p>
 
         </div>

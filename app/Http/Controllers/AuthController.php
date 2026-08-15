@@ -18,6 +18,11 @@ class AuthController extends Controller
         $request->validate([
             'username' => 'required|string|unique:users,username',
             'password' => 'required|string|min:6',
+        ], [
+            'username.required' => 'Username wajib diisi.',
+            'username.unique' => 'Username sudah dipakai, coba yang lain.',
+            'password.required' => 'Password wajib diisi.',
+            'password.min' => 'Password minimal 6 karakter.',
         ]);
 
         User::create([

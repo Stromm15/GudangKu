@@ -2,8 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const check = document.getElementById("check");
     const sidebar = document.getElementById("sidebar");
-    const menuIcon = document.getElementById("menu");
-    const cancelIcon = document.getElementById("cancel");
 
     if (!check || !sidebar) return;
 
@@ -11,15 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (check.checked) {
             sidebar.classList.remove("-left-[270px]");
             sidebar.classList.add("left-0");
-
-            menuIcon?.classList.add("hidden");
-            cancelIcon?.classList.remove("hidden");
         } else {
             sidebar.classList.add("-left-[270px]");
             sidebar.classList.remove("left-0");
-
-            menuIcon?.classList.remove("hidden");
-            cancelIcon?.classList.add("hidden");
         }
     });
 });
